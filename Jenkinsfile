@@ -1,9 +1,10 @@
 pipeline {
-    agent { docker { image 'node:12.10' } }
+    agent any
+    tools {nodejs "node"}
     stages {
         stage('build') {
             steps {
-                sh 'npm start'
+               sh 'npm start'
             }
         }
     }
