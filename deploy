@@ -1,5 +1,4 @@
-#!/bin/sh
-ssh ec2-user@18.223.185.123 <<EOF
+
     cd /var/lib/jenkins/workspace/Jenkins-Demo
     git pull origin master
     curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
