@@ -1,6 +1,6 @@
 -#!/bin/sh     
 ssh ec2-user@18.223.185.123 <<EOF       
- cd /jenkinns_demo
+ cd /var/lib/jenkins/workspace/Jenkins-Demo
  git pull      
  npm install --production      
  pm2 restart all
