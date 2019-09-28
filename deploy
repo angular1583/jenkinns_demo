@@ -1,6 +1,6 @@
 -#!/bin/sh     
-ssh userName@development-server-ip <<EOF       
- cd /your-project-path 
+ssh ec2-user@18.223.185.123 <<EOF       
+ cd /jenkinns_demo
  git pull      
  npm install --production      
  pm2 restart all
