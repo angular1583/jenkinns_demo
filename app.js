@@ -32,7 +32,7 @@ app.use((req, res, next) => {
   res.append('Access-Control-Allow-Headers', 'Content-Type');
   next();
 });
-
+ 
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
